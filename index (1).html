@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f56b8a">
+  <meta name="description" content="Salada de Frutas da Clara: saladas fresquinhas, tradicionais e gourmet, com entrega em Lagoa Grande do Maranhão - MA.">
+  <title>Salada de Frutas da Clara 🍓</title>
+  <style>
+    :root{--pink:#f56b8a;--pink-dark:#d94d70;--cream:#fff8ef;--green:#327653;--ink:#392d2e;--muted:#75676a}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fffdf9;line-height:1.6}
+    a{color:inherit} .wrap{width:min(1100px,92%);margin:auto}
+    header{background:linear-gradient(135deg,#fff0f3,#fff9ed);padding:18px 0 54px;overflow:hidden}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand{font-weight:900;font-size:1.12rem;color:var(--green);text-decoration:none}
+    .navlinks{display:flex;gap:18px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-weight:700;font-size:.94rem}
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding-top:55px}
+    .eyebrow{display:inline-block;background:#ffe0e7;color:#9d3150;padding:7px 13px;border-radius:30px;font-weight:800;font-size:.85rem}
+    h1{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.06;margin:18px 0}
+    h1 span{color:var(--pink-dark)} .hero p{font-size:1.1rem;color:var(--muted);max-width:560px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:0;border-radius:999px;padding:13px 20px;font-weight:850;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px)}.primary{background:#1fa855;color:#fff}.secondary{background:#fff;color:var(--green);border:2px solid #d7e8dc}
+    .fruit-art{min-height:320px;border-radius:35px;background:radial-gradient(circle at 30% 20%,#ffe0a3,transparent 27%),linear-gradient(145deg,#f8a2b5,#ffcf9e);display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 20px 50px #d98b8b38}
+    .bowl{font-size:clamp(8rem,18vw,13rem);filter:drop-shadow(0 15px 10px #74402a30)}
+    .floating{position:absolute;background:white;padding:10px 14px;border-radius:18px;font-weight:800;box-shadow:0 8px 25px #74402a20}.f1{top:22px;left:18px}.f2{bottom:24px;right:18px}
+    section{padding:68px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 32px}.section-head h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 8px}.section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+    .card{border:1px solid #f1e6e1;border-radius:24px;padding:25px;background:white;box-shadow:0 12px 30px #55332308}
+    .card-top{display:flex;align-items:center;gap:15px}.emoji{width:66px;height:66px;border-radius:20px;background:#fff0f3;display:grid;place-items:center;font-size:2.4rem;flex-shrink:0}
+    .card h3{margin:0;font-size:1.35rem}.card p{color:var(--muted);margin:6px 0 18px}
+    .price-row{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-top:1px dashed #eadbd6}.price{font-weight:900;color:var(--pink-dark)}
+    .card .btn{width:100%;margin-top:17px}
+    .extras{background:var(--cream)}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .feature{background:#fff;border-radius:20px;padding:23px;text-align:center}.feature .big{font-size:2.2rem}.feature h3{margin:7px 0}.feature p{margin:0;color:var(--muted);font-size:.95rem}
+    .order{background:linear-gradient(135deg,#eaf6ed,#fff0f3);text-align:center}.order h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:0 0 10px}.order p{color:var(--muted);max-width:620px;margin:0 auto 22px}
+    footer{padding:25px 0;background:#2d4f3d;color:#fff;text-align:center}footer p{margin:5px}
+    .wa-float{position:fixed;right:18px;bottom:18px;z-index:10;background:#1fa855;color:#fff;text-decoration:none;border-radius:50px;padding:13px 18px;font-weight:900;box-shadow:0 8px 25px #0002}
+    @media(max-width:720px){.hero{grid-template-columns:1fr;padding-top:35px}.fruit-art{min-height:245px}.cards{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.navlinks{gap:12px}.navlinks a{font-size:.86rem}section{padding:52px 0}}
+  </style>
+</head>
+<body>
+<header id="inicio">
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#inicio">🍓 Salada de Frutas da Clara</a>
+      <div class="navlinks"><a href="#cardapio">Cardápio</a><a href="#diferenciais">Nosso cuidado</a><a href="#pedir">Como pedir</a></div>
+    </nav>
+    <div class="hero">
+      <div>
+        <span class="eyebrow">Fresquinha, geladinha e feita com carinho 💗</span>
+        <h1>Um potinho de <span>alegria</span> no seu dia!</h1>
+        <p>Frutas deliciosas, creminhos irresistíveis e aquele cuidado especial da Clara. Peça a sua e receba em Lagoa Grande do Maranhão.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/559996490742?text=Ol%C3%A1%2C%20Clara!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener">💬 Pedir pelo WhatsApp</a>
+          <a class="btn secondary" href="#cardapio">Ver cardápio ↓</a>
+        </div>
+      </div>
+      <div class="fruit-art" aria-label="Ilustração de uma tigela de frutas">
+        <span class="floating f1">🍍 Feita com carinho</span><div class="bowl">🍓🍇🥝</div><span class="floating f2">❄️ Bem geladinha!</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="cardapio">
+    <div class="wrap">
+      <div class="section-head"><h2>Nosso cardápio 🍉</h2><p>Escolha sua favorita e chame a Clara para confirmar a disponibilidade do dia.</p></div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-top"><div class="emoji">🍓</div><div><h3>Tradicional</h3><p>Uma combinação colorida de frutas com nosso cremezinho rosinha.</p></div></div>
+          <div class="price-row"><span>150 ml</span><span class="price">R$ 5,00</span></div>
+          <div class="price-row"><span>300 ml</span><span class="price">R$ 10,00</span></div>
+          <div class="price-row"><span>500 ml</span><span class="price">R$ 15,00</span></div>
+          <a class="btn primary" href="https://wa.me/559996490742?text=Ol%C3%A1%2C%20Clara!%20Quero%20pedir%20uma%20salada%20tradicional." target="_blank" rel="noopener">Quero a tradicional</a>
+        </article>
+        <article class="card">
+          <div class="card-top"><div class="emoji">🥄</div><div><h3>Gourmet</h3><p>Camadas de frutas com cremes deliciosos. Você escolhe o seu preferido!</p></div></div>
+          <div class="price-row"><span>250 ml</span><span class="price">R$ 10,00</span></div>
+          <div class="price-row"><span>350 ml</span><span class="price">R$ 15,00</span></div>
+          <p style="margin:12px 0 0"><strong>Cremes:</strong> Ninho ou maracujá<br><strong>Adicionais:</strong> leite em pó, granola ou farinha láctea</p>
+          <a class="btn primary" href="https://wa.me/559996490742?text=Ol%C3%A1%2C%20Clara!%20Quero%20pedir%20uma%20salada%20gourmet." target="_blank" rel="noopener">Quero a gourmet</a>
+        </article>
+      </div>
+      <p style="text-align:center;color:#75676a;margin-top:20px;font-size:.92rem">Os tamanhos e sabores podem variar conforme o cardápio do dia. Confirme pelo WhatsApp.</p>
+    </div>
+  </section>
+
+  <section class="extras" id="diferenciais">
+    <div class="wrap">
+      <div class="section-head"><h2>O carinho está nos detalhes 💚</h2><p>Mais sabor e cuidado em cada pedido.</p></div>
+      <div class="feature-grid">
+        <div class="feature"><div class="big">❄️</div><h3>Bem geladinha</h3><p>Transportada em garrafa térmica para conservar o frescor.</p></div>
+        <div class="feature"><div class="big">🥣</div><h3>Montada na hora</h3><p>Sua salada é montada no momento da entrega, com todo cuidado.</p></div>
+        <div class="feature"><div class="big">🛵</div><h3>Entrega local</h3><p>Atendimento em Lagoa Grande do Maranhão – MA.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedir" class="order">
+    <div class="wrap">
+      <h2>Deu vontade? 😋</h2>
+      <p>Faça seu pedido direto com a Clara pelo WhatsApp. Entregas de segunda a sexta-feira, a partir das 14h30. Consulte a disponibilidade e combine a entrega pelo WhatsApp.</p>
+      <a class="btn primary" href="https://wa.me/559996490742?text=Ol%C3%A1%2C%20Clara!%20Quais%20saladas%20est%C3%A3o%20dispon%C3%ADveis%20hoje%3F" target="_blank" rel="noopener">📲 Falar com a Clara: (99) 96490-742</a>
+      <p style="font-size:.9rem;margin-top:14px">“Meu negócio é abençoado porque meu sócio é Deus.” 🙏</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><p><strong>Salada de Frutas da Clara 🍓</strong></p><p>Lagoa Grande do Maranhão – MA</p><p>© <span id="year"></span> • Feito com carinho</p></div></footer>
+<a class="wa-float" href="https://wa.me/559996490742?text=Ol%C3%A1%2C%20Clara!%20Quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Pedir pelo WhatsApp">💬 Pedir agora</a>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
